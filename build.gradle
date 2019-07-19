@@ -1,0 +1,10 @@
+apply plugin: 'groovy'
+
+import org.opwo.gradle.Metalink
+import org.apache.tools.ant.types.FileSet
+
+tasks.register("metalink", Metalink) {
+    url = "http://zad-opwo.com/download"
+    outputFile = "zad-opwo.xml"
+    fileSet = "C:/Users/kajetanz/Documents/tapeta"
+}
